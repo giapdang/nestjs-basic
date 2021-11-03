@@ -1,0 +1,16 @@
+{
+  "type": "postgres",
+  "host": "host.docker.internal",
+  "port": 35000,
+  "username": "postgres",
+  "database": "training",
+  "password": "root",
+  "synchronize": true,
+  "logging": true,
+  "migrations": [
+    "src/migration/**/*.ts"
+  ],
+  "cli": {
+    "migrationsDir": "src/migration"
+  }
+}
